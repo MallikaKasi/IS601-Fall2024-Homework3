@@ -1,16 +1,21 @@
-#  Week3 Advanced Calculator that does below functions
+#  Week3 Advanced Calculator 
 
-## Notes on Advanced Calculator
-The advanced calculator in part 3 contains static methods on the Calculator, instance methods on the Calculation, and class methods on the Calculations class.  In addition, it has more advanced testing that uses parameterized test data and a fixture to make it easy to setup each test with consistent data.  There are also modifciations to the .pylintrc file to control pylint's code analysis and I disable pylint errors in the calculator/calculation.py file by putting this code at the top of the file, which you can also use inside a specific function to disable a pylint check for a specific file.   You sometimes need to disable pylint when you know you are doing the correct thing, but that for some reason pylint doesn't understand.  It's better to disable it at the function or file level than the global level because you never know when you really do want it to tell you the style error.
-
-**This Calculator does the below functions**:
+**This advanced Calculator does the below functions**:
 1. Add, Subtract, Multiply, and Divide
 2. Throw exception for divide by zero and test that the exception is thrown
-3. Use at least one class, at least one static method, at least one class method.
-4. It needs to  store a history of calculations, so that you can retrieve the last calculation, add a calculation, 
-5. It needs to have 100% test coverage, pass pylint, and you need to do your best to not repeat any lines of code.  
-6.  You should use type hints for input parameter types and return types.
-7.  Implement a pytest fixture to test the 
+3. This will store history of calculations, so that we can retrieve the last calculation, add a calculation, 
+4. This code has 100% test coverage, passing pylint and 100% pytest coverage.  
+5. Implemented a pytest fixture to test  
+
+**set up:**
+Python Virtual Environments: Essential for managing project-specific dependencies.
+Pytest: A powerful framework for writing and running Python tests.
+Pylint: A tool for analyzing your Python code for errors and enforcing a coding standard.
+Coverage: A tool for measuring the coverage of your unit tests.
+
+Main Principes followed:
+1) Follow DRY Principle (Don't Repeat Yourself)
+2) Separation of Concerns -- Separate each part that the program needs to do, so it is organized and the functionals only have to do ONE thing.
 
 ### Test Results
 (venv) mallikakasi@HOME:~/NJIT-FALL-2024/IS601-Projects/Week3/Week3_Project$ pytest
